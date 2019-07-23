@@ -24,7 +24,8 @@ namespace business_account
            //use "is" to make downcasting more safety 
            if(acc3 is BusinessAccount)
            {
-               BusinessAccount acc5 = (BusinessAccount)acc3;
+               //BusinessAccount acc5 = (BusinessAccount)acc3;
+               BusinessAccount acc5 = acc3 as BusinessAccount;
                acc5.Loan(100.0);
                Console.WriteLine("Loan!");
            }

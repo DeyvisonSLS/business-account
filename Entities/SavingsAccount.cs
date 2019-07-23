@@ -16,5 +16,9 @@ namespace business_account.Entities
         {
             Balance += Balance * InterestRate;
         }
+        public override void WithDraw(double amount)
+        {
+            Balance -= amount;
+        }
     }
 }
