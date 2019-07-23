@@ -18,7 +18,9 @@ namespace business_account.Entities
         }
         public override void WithDraw(double amount)
         {
-            Balance -= amount;
+            //Balance -= amount;
+            base.WithDraw(amount);
+            Balance -= 2;
         }
     }
 }
