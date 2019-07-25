@@ -2,7 +2,7 @@ using System;
 
 namespace business_account.Entities
 {
-    class Account
+    abstract class Account
     {
         public int Number { get; protected set; }
         public string Holder { get; protected set; }
